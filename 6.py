@@ -14,12 +14,11 @@ for i in range(len(a)):
 print("Минимальное значение массива =",min)
 print("Введите число DELTA")
 delta = int(input())
-x = min - delta
 y = min + delta
 t = 0
 for i in range(len(a)):
-    if (a[i]==x) or (a[i]==y):
-        t = t + 1;
+    if (a[i]==y):
+        t = t + 1
 if (t==0):
     print("Элементов  в  заданном  массиве, отличающихся от минимального на DELTA - нет.")
 else:
